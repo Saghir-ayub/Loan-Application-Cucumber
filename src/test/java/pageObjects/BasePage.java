@@ -1,4 +1,5 @@
 package pageObjects;
 
-public class BasePage {
+abstract class BasePage {
+
 }

@@ -6,4 +6,5 @@ Feature: Creating an application
     And click sign in
     And click create a new application
 
+  @fillingInUserInformationScenario
 Scenario:Filling in User information

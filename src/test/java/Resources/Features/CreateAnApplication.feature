@@ -1,4 +1,5 @@
 Feature: Creating an application
+
   Background:
     Given I am on the homepage
     And I click log in button
@@ -7,4 +8,16 @@ Feature: Creating an application
     And click create a new application
 
   @fillingInUserInformationScenario
-Scenario:Filling in User information
+  Scenario:Filling in User information
+    When I input the application details
+      | First Name     | Bobby                  |
+      | Last Name      | Smith                  |
+      | Age            | 24                     |
+      | Address Line 1 | 12                     |
+      | Address Line 2 | Bob Lane               |
+      | Address Line 3 | Bob Town               |
+      | Address Line 4 | Bobby                  |
+      | Post code      | GIR 0AA                |
+      | Email          | BobTheTester@ten10.com |
+      | Loan Amount    | 10000                  |
+    And click the submit button

@@ -24,4 +24,9 @@ public class DriverFactory {
         }
         return driver;
     }
+
+    public static void tearDownDriver() {
+        getDriver();
+        driver.close();
+    }
 }

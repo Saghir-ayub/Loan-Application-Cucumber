@@ -1,3 +1,4 @@
+@LoanApplicationFeature
 Feature: Creating an application
 
   Background:

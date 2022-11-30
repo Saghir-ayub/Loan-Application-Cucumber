@@ -8,7 +8,7 @@ Feature: Creating an application
     And click sign in
     And click create a new application
 
-  @fillingInUserInformationScenario
+  @FillingInCorrectUserInfo
   Scenario:Filling in User information
     When I input the application details
       | First Name     | Bobby                  |

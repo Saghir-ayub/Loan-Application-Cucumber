@@ -3,7 +3,9 @@ package StepDefinitions;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import org.apache.commons.text.CaseUtils;
+import org.junit.Assert;
 import pageObjects.LoanApplicationPage;
 
 import java.util.Map;
@@ -30,5 +32,11 @@ public class LoanApplicationStepDef {
     @And("click the submit button")
     public void clickTheSubmitButton() {
         LoanApplicationPage.submitApplication();
+    }
+
+    @Then("I will see {string}")
+    public void iWillSee(String accessDenied) {
+        Assert.assertTrue("was expecting access is denied but instead got: "+LoanApplicationPage.accessDenied(),
+                LoanApplicationPage.accessDenied().contains(accessDenied));
     }
 }

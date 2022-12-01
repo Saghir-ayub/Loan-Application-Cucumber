@@ -21,8 +21,13 @@ abstract class BasePage {
         element.sendKeys(inputString);
     }
 
-    static void WaitAndClick(By elementSelector){
+    static void WaitAndClick(By elementSelector) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(elementSelector));
         element.click();
+    }
+
+    static WebElement VisibilityOfElement(By elementSelector) {
+        WebElement element = driver.findElement(elementSelector);
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
 }

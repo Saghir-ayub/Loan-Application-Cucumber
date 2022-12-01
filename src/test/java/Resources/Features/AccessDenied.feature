@@ -7,14 +7,14 @@ Feature: Access is denied to users on specific pages
 
   @AdminAccessDenied
   Scenario: Creating a new loan application as an Admin
-    When I enter username: "Admin" and password: "password"
+    When I enter username: "admin" and password: "password"
     And click sign in
-    And navigate to Loan application page
+    And navigate to application page
     Then I will see "Access is denied"
 
   @UserAccessDenied
   Scenario: Trying to access Admin page as a User
-    When I enter username: "User" and password: "password"
+    When I enter username: "user" and password: "password"
     And click sign in
     And navigate to admin page
     Then I will see "Access is denied"

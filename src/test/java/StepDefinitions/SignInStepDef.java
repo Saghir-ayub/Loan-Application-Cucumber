@@ -18,7 +18,7 @@ public class SignInStepDef {
         HomePage.clickLoginButton();
     }
 
-    @And("^navigate to(?:.+)? (.+) page$")
+    @And("^navigate to (\\w+) page$")
     public void navigateToPage(String pageChoice) {
         HomePage.clickCreateANewApplication(pageChoice);
     }

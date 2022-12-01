@@ -4,9 +4,9 @@ Feature: Creating an application
   Background:
     Given I am on the homepage
     And I click the log in / out button on the homepage
-    And I enter username: "User" and password: "password"
+    And I enter username: "user" and password: "password"
     And click sign in
-    And navigate to Loan application page
+    And navigate to application page
 
   @FillingInCorrectUserInfo
   Scenario:Filling in User information

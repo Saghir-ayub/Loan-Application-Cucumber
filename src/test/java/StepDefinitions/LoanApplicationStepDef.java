@@ -34,9 +34,9 @@ public class LoanApplicationStepDef {
         LoanApplicationPage.submitApplication();
     }
 
-    @Then("I will see {string}")
-    public void iWillSee(String accessDenied) {
-        Assert.assertTrue("was expecting access is denied but instead got: "+LoanApplicationPage.accessDenied(),
-                LoanApplicationPage.accessDenied().contains(accessDenied));
+    @Then("the header will be: {string}")
+    public void iWillSee(String headerTitle) {
+        Assert.assertTrue("was expecting: "+ headerTitle +": "+LoanApplicationPage.headerTitle(),
+                LoanApplicationPage.headerTitle().contains(headerTitle));
     }
 }

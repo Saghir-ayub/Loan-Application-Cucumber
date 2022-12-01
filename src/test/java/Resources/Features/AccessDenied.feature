@@ -10,11 +10,11 @@ Feature: Access is denied to users on specific pages
     When I enter username: "admin" and password: "password"
     And click sign in
     And navigate to application page
-    Then I will see "Access is denied"
+    Then the header will be: "Access is denied"
 
   @UserAccessDenied
   Scenario: Trying to access Admin page as a User
     When I enter username: "user" and password: "password"
     And click sign in
     And navigate to admin page
-    Then I will see "Access is denied"
+    Then the header will be: "Access is denied"

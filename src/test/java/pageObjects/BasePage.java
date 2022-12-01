@@ -30,4 +30,8 @@ abstract class BasePage {
         WebElement element = driver.findElement(elementSelector);
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    static String TitleOfHeader() {
+        return VisibilityOfElement(By.xpath("//h1")).getText();
+    }
 }

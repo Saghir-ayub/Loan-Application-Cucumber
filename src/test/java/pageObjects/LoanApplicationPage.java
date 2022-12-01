@@ -2,8 +2,6 @@ package pageObjects;
 
 import org.openqa.selenium.By;
 
-import java.util.Collection;
-
 public class LoanApplicationPage extends BasePage{
 
     private static final By SUBMIT_APPLICATION = By.xpath("//button[@type='submit']");
@@ -18,7 +16,7 @@ public class LoanApplicationPage extends BasePage{
         WaitAndClick(SUBMIT_APPLICATION);
     }
 
-    public static String accessDenied() {
-        return VisibilityOfElement(HEADER_OF_PAGE).getText();
+    public static String headerTitle() {
+        return TitleOfHeader();
     }
 }

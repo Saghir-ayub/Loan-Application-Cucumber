@@ -26,4 +26,7 @@ public class HomePage extends BasePage{
     public static String logoutConfirmationMessage() {
         return VisibilityOfElement(LOGOUT_CONFIRMATION).getText();
     }
+    public static String HeaderTitle() {
+        return TitleOfHeader();
+    }
 }

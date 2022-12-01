@@ -20,7 +20,7 @@ public class SignInStepDef {
 
     @And("^navigate to (\\w+) page$")
     public void navigateToPage(String pageChoice) {
-        HomePage.clickCreateANewApplication(pageChoice);
+        HomePage.clickCreateANewApplication(pageChoice.toLowerCase());
     }
     @Given("I enter username: {string} and password: {string}")
     public void enterUsernameAndPassword(String userName, String passWord) {
@@ -41,5 +41,18 @@ public class SignInStepDef {
     @Then("I see I have been logged out")
     public void iSeeIHaveBeenLoggedOut() {
         Assert.assertEquals("You have been logged out.",HomePage.logoutConfirmationMessage());
+    }
+
+    @Then("I will be redirected to sign in page")
+    public void iWillBeRedirectedToSignInPage() {
+        Assert.assertEquals("Please Sign In",SignInPage.HeaderTitle());
+    }
+
+    @And("I am not logged in")
+    public void iAmNotLoggedIn() {
+        if(!HomePage.loggedInAs().contains("Logged user:  ")){
+            HomePage.clickLoginButton();
+            HomePage.goToHomePage();
+        }
     }
 }

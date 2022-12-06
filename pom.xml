@@ -75,6 +75,12 @@
             <artifactId>gherkin</artifactId>
             <version>25.0.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.prashant-ramcharan/courgette-jvm -->
+        <dependency>
+            <groupId>io.github.prashant-ramcharan</groupId>
+            <artifactId>courgette-jvm</artifactId>
+            <version>6.8.0</version>
+        </dependency>
     </dependencies>
 
     <build>

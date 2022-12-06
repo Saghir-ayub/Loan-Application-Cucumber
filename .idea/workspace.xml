@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4abe47ea-71b6-4d8c-ac9a-6f33a0691c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/Features/GuestAccess.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/SearchPageStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/FeatureRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/MultiRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/ScenarioRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/SingleRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/TagRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1fd2edd7-4bae-413a-a136-fa1936c3078c-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b7bd4a68-b338-49ac-aada-beab155331ab-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c51da6f1-6fa9-4af9-8591-234f008b0eb8-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cce1b488-f9a9-4925-b29c-a550b39879ee-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/AllureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Manager/AllureRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Manager/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Features/AccessDenied.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Features/AccessDenied.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/AllureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/AllureRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Manager/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/Runner.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoanApplicationStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/LoanApplicationStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/SignInStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/SignInStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/LoanApplicationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LoanApplicationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/SignInPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +50,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/saghir.ayub/Documents/Automation training/LoanAppTemplate",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -70,33 +65,36 @@
       <recent name="C:\Users\saghir.ayub\Documents\Automation training\LoanApplication\target" />
       <recent name="C:\Users\saghir.ayub\Documents\Automation training\LoanApplication\src\test\java\StepDefinitions" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SuiteRunners" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.AllureRunner">
+  <component name="RunManager">
     <configuration name="AllureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LoanApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="SuiteRunners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.AllureRunner" />
+      <option name="PACKAGE_NAME" value="SuiteRunners" />
+      <option name="MAIN_CLASS_NAME" value="SuiteRunners.AllureRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LoanApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Manager.*" />
+          <option name="PATTERN" value="SuiteRunners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Manager" />
-      <option name="MAIN_CLASS_NAME" value="Manager.Runner" />
+      <option name="PACKAGE_NAME" value="SuiteRunners" />
+      <option name="MAIN_CLASS_NAME" value="SuiteRunners.SingleRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingleRunner" />
         <item itemvalue="JUnit.AllureRunner" />
-        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>

@@ -3,7 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 
 public class HomePage extends BasePage{
-    public static final String URL = "http://35.178.110.62:8080/";
+    public static final String URL = "http://13.40.4.230:8080/";
     private static final By LOGIN_BUTTON = By.xpath("//a[contains(@href,'logout')]");
     private static final By LOGGED_IN_AS = By.xpath("//a[contains(@href,'logout')]/parent::span");
     private static final By LOGOUT_CONFIRMATION = By.xpath("//form[contains(@action,'login')]//div[contains(@class,'alert-info')]");

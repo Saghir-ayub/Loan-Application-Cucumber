@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4abe47ea-71b6-4d8c-ac9a-6f33a0691c98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/ScreenShotTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Manager/ScreenShotTaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/AllureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/AllureRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <recent name="SuiteRunners" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TagRunner">
+  <component name="RunManager" selected="JUnit.AllureRunner">
     <configuration name="AllureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LoanApplication" />
       <extension name="coverage">
@@ -140,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TagRunner" />
         <item itemvalue="JUnit.AllureRunner" />
+        <item itemvalue="JUnit.TagRunner" />
         <item itemvalue="JUnit.FeatureRunner" />
         <item itemvalue="JUnit.ScenarioRunner" />
         <item itemvalue="JUnit.SingleRunner" />

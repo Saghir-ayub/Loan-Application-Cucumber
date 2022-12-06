@@ -18,10 +18,7 @@ public class Hooks {
         System.out.println("Tearing down driver");
         if (scenario.isFailed()) {
             scenario.log("Scenario failed so capturing a screenshot");
-
-//            TakesScreenshot screenshot = (TakesScreenshot) DriverFactory.getDriver();
-//            scenario.attach(screenshot.getScreenshotAs(OutputType.BYTES), "image/png", scenario.getName());
-            ScreenShotTaker.addScreenShotsOnFailure();
+            ScreenShotTaker.addScreenShotsOnFailure(scenario);
         }
         DriverFactory.tearDownDriver();
     }

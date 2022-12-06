@@ -18,7 +18,8 @@ import org.junit.runner.RunWith;
                 features = "src/test/java/Resources/Features",
                 glue = "StepDefinitions",
                 publish = true,
-                plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+                plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
         ))
 public class MultiRunner {
 }

@@ -19,7 +19,8 @@ import org.junit.runner.RunWith;
                 glue = "StepDefinitions",
                 publish = true,
                 tags = {"@AccessDeniedFeature"},
-                plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+                plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
         ))
 public class TagRunner {
 }

@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4abe47ea-71b6-4d8c-ac9a-6f33a0691c98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/FeatureRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/MultiRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/ScenarioRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/SingleRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/TagRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/AllureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/AllureRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Manager/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Manager/Runner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/FeatureRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/FeatureRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/MultiRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/MultiRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/ScenarioRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/ScenarioRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/SingleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/SingleRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SuiteRunners/TagRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SuiteRunners/TagRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <recent name="SuiteRunners" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FeatureRunner">
     <configuration name="AllureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LoanApplication" />
       <extension name="coverage">
@@ -80,6 +74,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="SuiteRunners" />
       <option name="MAIN_CLASS_NAME" value="SuiteRunners.AllureRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeatureRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LoanApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SuiteRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SuiteRunners" />
+      <option name="MAIN_CLASS_NAME" value="SuiteRunners.FeatureRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,6 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FeatureRunner" />
         <item itemvalue="JUnit.SingleRunner" />
         <item itemvalue="JUnit.AllureRunner" />
       </list>

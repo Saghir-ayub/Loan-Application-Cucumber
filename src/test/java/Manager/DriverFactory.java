@@ -8,13 +8,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class DriverFactory {
     private static WebDriver driver;
 
-    static {
-        WebDriverManager.chromedriver().setup();
-    }
-
     private static void setDriver() {
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized", "incognito");
+        options.addArguments("start-maximized", "incognito", "headless");
         driver = new ChromeDriver(options);
     }
 

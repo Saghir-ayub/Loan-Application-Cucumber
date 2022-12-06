@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Courgette.class)
 @CourgetteOptions(
-        threads = 1,
+        threads = 4,
         runLevel = CourgetteRunLevel.FEATURE,
         rerunFailedScenarios = true,
         testOutput = CourgetteTestOutput.CONSOLE,

@@ -12,16 +12,16 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ScreenShotTaker {
-    private static int scrShotCount = 0;
+    private static AtomicInteger scrShotCount = new AtomicInteger();
     public static void addScreenShotsOnFailure(Scenario scenario) {
-        ++scrShotCount;
+        int currentScrShot = scrShotCount.incrementAndGet();
         TakesScreenshot screenshot = (TakesScreenshot) DriverFactory.getDriver();
         File scrFile = screenshot.getScreenshotAs(OutputType.FILE);
 
         Date d = new Date();
         SimpleDateFormat formatter = new SimpleDateFormat("E dd MMM HH:mm:ss z yyyy");
         String strDate = formatter.format(d);
-        String screenshotName = strDate.replace(":", "_").replace(" ", "_") + "_" + scrShotCount + ".jpg";
+        String screenshotName = strDate.replace(":", "_").replace(" ", "_") + "_" + currentScrShot + ".jpg";
 
         try {
             FileUtils.copyFile(scrFile, new File("C:\\Users\\saghir.ayub\\Documents\\Automation training\\LoanApplication\\target\\extent-report\\" + screenshotName));
